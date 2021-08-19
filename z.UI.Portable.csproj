@@ -5,6 +5,8 @@
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>z.UI</AssemblyName>
     <RootNamespace>z.UI</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>tofilagman</Authors>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
