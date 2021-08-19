@@ -1,0 +1,1034 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>z.UI</AssemblyName>
+    <RootNamespace>z.UI</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DevComponents\SystemImages\AddMoreItemsContainer.png" />
+    <None Remove="DevComponents\SystemImages\BlankOffice2010HotBlue.png" />
+    <None Remove="DevComponents\SystemImages\BlankOffice2010HotSilver.png" />
+    <None Remove="DevComponents\SystemImages\BlankOffice2010NormalBlue.png" />
+    <None Remove="DevComponents\SystemImages\BlankOffice2010NormalSilver.png" />
+    <None Remove="DevComponents\SystemImages\BlankOffice2010PressedBlue.png" />
+    <None Remove="DevComponents\SystemImages\BlankOffice2010PressedSilver.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonHot.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonHotBlack.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonHotSilver.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonHotVistaBlack.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonNormal.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonNormalBlack.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonNormalSilver.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonNormalVistaBlack.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonPressed.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonPressedBlack.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonPressedSilver.png" />
+    <None Remove="DevComponents\SystemImages\BlankStartButtonPressedVistaBlack.png" />
+    <None Remove="DevComponents\SystemImages\BlankWin7HotBlue.png" />
+    <None Remove="DevComponents\SystemImages\BlankWin7NormalBlue.png" />
+    <None Remove="DevComponents\SystemImages\BlankWin7PressedBlue.png" />
+    <None Remove="DevComponents\SystemImages\Calculator.png" />
+    <None Remove="DevComponents\SystemImages\Category.png" />
+    <None Remove="DevComponents\SystemImages\CloseButton.png" />
+    <None Remove="DevComponents\SystemImages\CollapseTitle.png" />
+    <None Remove="DevComponents\SystemImages\ColorPickerButtonImage.png" />
+    <None Remove="DevComponents\SystemImages\ColorPickerCustomColors.png" />
+    <None Remove="DevComponents\SystemImages\DateReset.png" />
+    <None Remove="DevComponents\SystemImages\DefaultNavBarImage.png" />
+    <None Remove="DevComponents\SystemImages\Delete.png" />
+    <None Remove="DevComponents\SystemImages\DockGuideBottom.png" />
+    <None Remove="DevComponents\SystemImages\DockGuideLeft.png" />
+    <None Remove="DevComponents\SystemImages\DockGuideRight.png" />
+    <None Remove="DevComponents\SystemImages\DockGuideTab.png" />
+    <None Remove="DevComponents\SystemImages\DockGuideTop.png" />
+    <None Remove="DevComponents\SystemImages\DockHintAllSides.png" />
+    <None Remove="DevComponents\SystemImages\DockHintAllSides2010.png" />
+    <None Remove="DevComponents\SystemImages\DockHintBottom.png" />
+    <None Remove="DevComponents\SystemImages\DockHintBottom2010.png" />
+    <None Remove="DevComponents\SystemImages\DockHintLeft.png" />
+    <None Remove="DevComponents\SystemImages\DockHintLeft2010.png" />
+    <None Remove="DevComponents\SystemImages\DockHintLeftRight2010.png" />
+    <None Remove="DevComponents\SystemImages\DockHintRight.png" />
+    <None Remove="DevComponents\SystemImages\DockHintRight2010.png" />
+    <None Remove="DevComponents\SystemImages\DockHintTab.png" />
+    <None Remove="DevComponents\SystemImages\DockHintTab2010.png" />
+    <None Remove="DevComponents\SystemImages\DockHintTop.png" />
+    <None Remove="DevComponents\SystemImages\DockHintTop2010.png" />
+    <None Remove="DevComponents\SystemImages\DockHintTopBottom2010.png" />
+    <None Remove="DevComponents\SystemImages\ErrorIcon.png" />
+    <None Remove="DevComponents\SystemImages\ExpandTitle.png" />
+    <None Remove="DevComponents\SystemImages\FirstRecord.png" />
+    <None Remove="DevComponents\SystemImages\FontAwesome.ttf" />
+    <None Remove="DevComponents\SystemImages\FreeText.png" />
+    <None Remove="DevComponents\SystemImages\GreenLight.png" />
+    <None Remove="DevComponents\SystemImages\ImagePlaceHolder.png" />
+    <None Remove="DevComponents\SystemImages\ImagePlaceHolder16x16.png" />
+    <None Remove="DevComponents\SystemImages\LastRecord.png" />
+    <None Remove="DevComponents\SystemImages\MaterialIcons-Regular.ttf" />
+    <None Remove="DevComponents\SystemImages\NavBarConfigure.png" />
+    <None Remove="DevComponents\SystemImages\NavBarShowLess.png" />
+    <None Remove="DevComponents\SystemImages\NavBarShowMore.png" />
+    <None Remove="DevComponents\SystemImages\NewRecord.png" />
+    <None Remove="DevComponents\SystemImages\NextRecord.png" />
+    <None Remove="DevComponents\SystemImages\Note24.png" />
+    <None Remove="DevComponents\SystemImages\Note64.png" />
+    <None Remove="DevComponents\SystemImages\Office2010BlackClientBackground.png" />
+    <None Remove="DevComponents\SystemImages\Office2010BlueClientBackground.png" />
+    <None Remove="DevComponents\SystemImages\Office2010SilverClientBackground.png" />
+    <None Remove="DevComponents\SystemImages\Pin.png" />
+    <None Remove="DevComponents\SystemImages\PinInactive.png" />
+    <None Remove="DevComponents\SystemImages\PinPushed.png" />
+    <None Remove="DevComponents\SystemImages\PinPushedInactive.png" />
+    <None Remove="DevComponents\SystemImages\PreviousRecord.png" />
+    <None Remove="DevComponents\SystemImages\QatCustomizeItemCombo.png" />
+    <None Remove="DevComponents\SystemImages\Rating.png" />
+    <None Remove="DevComponents\SystemImages\RibbonOverflow.png" />
+    <None Remove="DevComponents\SystemImages\RibbonOverflow24.png" />
+    <None Remove="DevComponents\SystemImages\Shadow3px-2.png" />
+    <None Remove="DevComponents\SystemImages\Shadow3px.png" />
+    <None Remove="DevComponents\SystemImages\Sort.png" />
+    <None Remove="DevComponents\SystemImages\TaskBlueFlag.png" />
+    <None Remove="DevComponents\SystemImages\TaskBlueStop.png" />
+    <None Remove="DevComponents\SystemImages\TaskBulb.png" />
+    <None Remove="DevComponents\SystemImages\TaskCheckMark.png" />
+    <None Remove="DevComponents\SystemImages\TaskCheckMark2.png" />
+    <None Remove="DevComponents\SystemImages\TaskDelete.png" />
+    <None Remove="DevComponents\SystemImages\TaskExclamation.png" />
+    <None Remove="DevComponents\SystemImages\TaskFlag.png" />
+    <None Remove="DevComponents\SystemImages\TaskHand.png" />
+    <None Remove="DevComponents\SystemImages\TaskHelp.png" />
+    <None Remove="DevComponents\SystemImages\TaskInformation.png" />
+    <None Remove="DevComponents\SystemImages\TaskInformation2.png" />
+    <None Remove="DevComponents\SystemImages\TaskNoEntry.png" />
+    <None Remove="DevComponents\SystemImages\TaskShield.png" />
+    <None Remove="DevComponents\SystemImages\TaskShieldHelp.png" />
+    <None Remove="DevComponents\SystemImages\TaskShieldOk.png" />
+    <None Remove="DevComponents\SystemImages\TaskShieldStop.png" />
+    <None Remove="DevComponents\SystemImages\TaskStop.png" />
+    <None Remove="DevComponents\SystemImages\TaskStop2.png" />
+    <None Remove="DevComponents\SystemImages\TaskUsers.png" />
+    <None Remove="DevComponents\SystemImages\VS2010ClientBackground.png" />
+    <None Remove="DevComponents\SystemImages\WinClose.png" />
+    <None Remove="DevComponents\SystemImages\WinMax.png" />
+    <None Remove="DevComponents\SystemImages\WinMin.png" />
+    <None Remove="DevComponents\SystemImages\WinRestore.png" />
+    <None Remove="DevComponents\SystemImages\WizardHeaderImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DevComponents\SystemImages\AddMoreItemsContainer.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankOffice2010HotBlue.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankOffice2010HotSilver.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankOffice2010NormalBlue.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankOffice2010NormalSilver.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankOffice2010PressedBlue.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankOffice2010PressedSilver.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonHot.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonHotBlack.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonHotSilver.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonHotVistaBlack.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonNormal.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonNormalBlack.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonNormalSilver.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonNormalVistaBlack.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonPressed.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonPressedBlack.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonPressedSilver.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankStartButtonPressedVistaBlack.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankWin7HotBlue.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankWin7NormalBlue.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\BlankWin7PressedBlue.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Calculator.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Category.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\CloseButton.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\CollapseTitle.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\ColorPickerButtonImage.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\ColorPickerCustomColors.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DateReset.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DefaultNavBarImage.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Delete.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockGuideBottom.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockGuideLeft.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockGuideRight.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockGuideTab.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockGuideTop.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintAllSides.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintAllSides2010.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintBottom.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintBottom2010.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintLeft.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintLeft2010.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintLeftRight2010.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintRight.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintRight2010.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintTab.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintTab2010.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintTop.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintTop2010.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\DockHintTopBottom2010.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\ErrorIcon.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\ExpandTitle.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\FirstRecord.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\FontAwesome.ttf" />
+    <EmbeddedResource Include="DevComponents\SystemImages\FreeText.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\GreenLight.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\ImagePlaceHolder.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\ImagePlaceHolder16x16.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\LastRecord.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\MaterialIcons-Regular.ttf" />
+    <EmbeddedResource Include="DevComponents\SystemImages\NavBarConfigure.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\NavBarShowLess.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\NavBarShowMore.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\NewRecord.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\NextRecord.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Note24.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Note64.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Office2010BlackClientBackground.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Office2010BlueClientBackground.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Office2010SilverClientBackground.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Pin.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\PinInactive.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\PinPushed.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\PinPushedInactive.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\PreviousRecord.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\QatCustomizeItemCombo.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Rating.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\RibbonOverflow.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\RibbonOverflow24.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Shadow3px-2.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Shadow3px.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\Sort.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskBlueFlag.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskBlueStop.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskBulb.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskCheckMark.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskCheckMark2.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskDelete.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskExclamation.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskFlag.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskHand.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskHelp.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskInformation.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskInformation2.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskNoEntry.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskShield.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskShieldHelp.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskShieldOk.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskShieldStop.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskStop.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskStop2.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\TaskUsers.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\VS2010ClientBackground.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\WinClose.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\WinMax.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\WinMin.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\WinRestore.png" />
+    <EmbeddedResource Include="DevComponents\SystemImages\WizardHeaderImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DevComponents\AdvTree\AdvTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\Cell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\ColumnHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\ColumnHeaderControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\Display\TreeColorTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\Drawing\Border.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\Drawing\Fill.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\Drawing\GradientFill.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\Drawing\SolidBorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\Drawing\SolidFill.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\Node.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\NodeConnector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AdvTree\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Animation\Animation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Animation\AnimationDouble.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Animation\AnimationInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Animation\AnimationPoint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Animation\AnimationRectangle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Animation\Storyline.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\AutoHidePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Balloon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Bar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\BarBaseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\BaseItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\BubbleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\BubbleBarOverlay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\BubbleBarTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\BubbleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ButtonX\ButtonX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\CheckBoxItem\CheckBoxItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\CircularProgressItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorPickers\ColorCombControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorPickers\ColorContrastControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorPickers\ColorItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorPickers\ColorPickerDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorPickers\ColorSelectionPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorPickers\CustomColorBlender.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorPickers\CustomColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ColorSchemeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ComboBoxItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ComboItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ContextMenuBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ControlContainerItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\BaseItemControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\BindingNavigatorEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\CheckBoxX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\CircularProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\CollapsibleSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ColorPickerButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ComboTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ControlWithBackgroundStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DataGridViewX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DataGridViewX\DataGridViewComboBoxEx\DataGridViewComboBoxExEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DataGridViewX\DataGridViewDateTimeInput\DataGridViewDateTimeInputEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DataGridViewX\DataGridViewDoubleInput\DataGridViewDoubleInputEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DataGridViewX\DataGridViewIntegerInput\DataGridViewIntegerInputEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DataGridViewX\DataGridViewIpAddressInput\DataGridViewIpAddressInputEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DataGridViewX\DataGridViewMaskedTextBoxAdv\DataGridViewMaskedTextBoxAdvEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DataGridViewX\DataGridViewTextBoxDropDown\DataGridViewTextBoxDropDownEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DesktopAlert\DesktopAlertWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DGHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\DGVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\Flyout\Flyout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\Flyout\FlyoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\GroupPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\LabelX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\Line.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ListBoxAdv\ListBoxAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ListBoxAdv\ListBoxItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\MaskedTextBoxAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\PageNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\PageNavigatorItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\PageSlider\PageSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\PageSlider\PageSliderPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\PageSlider\StepIndicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\PopupControlHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ProgressBarX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ProgressStepper\ProgressSteps.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ProgressStepper\StepItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ProgressStepper\StepItemContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\RangeSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\RatingStar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ReflectionImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ReflectionLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\RichTextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\RichTextBoxScrollEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\ScrollbarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\SideNav\SideNav.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\SideNav\SideNavItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\SideNav\SideNavPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\SideNav\SideNavStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\SlidePanel\SlidePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\SlidePanel\SliderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\Slider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\SymbolBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TabbedForm\NewTabFormItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TabbedForm\TabFormControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TabbedForm\TabFormItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TabbedForm\TabFormItemBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TabbedForm\TabFormPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TabbedForm\TabFormStripContainerItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TabbedForm\TabFormStripControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TabbedForm\TabParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TextBoxDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TextBoxX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TokenEditor\EditToken.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\TokenEditor\TokenEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\Toolbox\ToolboxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\Toolbox\ToolboxGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Controls\Toolbox\ToolboxItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\CrumbBar\CrumbBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\CrumbBar\CrumbBarItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\CrumbBar\CrumbBarItemView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\CrumbBar\CrumbBarOverflowButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\CrumbBar\CrumbBarViewContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\CustomizeItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\DisplayMoreItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\DockContainerItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\DockingHint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\DocumentDock\PanelDockContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\DotNetBarManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\DualButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\Calculator\Calculator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DateTimeAdv\CalendarBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DateTimeAdv\DateTimeInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DateTimeAdv\DayLabelItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DateTimeAdv\MonthCalendarAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DateTimeAdv\MonthCalendarItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DateTimeAdv\SingleMonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DateTimeAdv\TimeSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DateTimeAdv\TimeSelectorItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\DoubleInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\IntegerInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\IpAddressInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\NumericInputBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Editors\VisualControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ExpandablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ExpandableSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ExplorerBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ExplorerBarContainerItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ExplorerBarGroupItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\frmCustomize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\GenericItemContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ICommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ImageItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ItemsListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\LabelItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\MDISystemItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\MdiWindowListItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\MenuPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroAppButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroAppForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroMessageBoxDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroQatCustomizeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroShell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroStripContainerItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroTabItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroTabItemContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroTabPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroTileItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroTilePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Metro\MetroToolbarContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\NavigationBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\NavigationBarContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\NavigationPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DevComponents\NavigationPanePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\NavPaneOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Office2007Form\OfficeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Office2007Form\RibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Office2007Form\SystemCaptionItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PanelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PanelExTitle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PopupContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PopupContainerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PopupItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PopupItemControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PopupShadow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ProgressBarItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PropertyGrid\AdvPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PropertyGrid\AdvPropertyGridAppearance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PropertyGrid\PropertyCategoryNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PropertyGrid\PropertyCheckBoxNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PropertyGrid\PropertyNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PropertyGrid\PropertyNodeColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PropertyGrid\PropertyOptionListNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\PropertyGrid\PropertySettings.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\RadialMenu\RadialMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\RadialMenu\RadialMenuColorTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\RadialMenu\RadialMenuContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\RadialMenu\RadialMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\RadialMenu\RadialMenuPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\RatingItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\ApplicationButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\CaptionItemContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\GalleryContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\GalleryGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\ItemContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\ItemControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\ItemPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\ItemPanelBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\KeyTipsCanvasControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\MessageBoxDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\PanelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\QatCustomizeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\QatCustomizeItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\QatCustomizePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\QatOverflowItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\QatToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RangeSliderItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonBarMergeContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonClientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonOverflowButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonStripContainerItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonTabItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonTabItemContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\RibbonTabItemGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\SliderItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\SuperTooltip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Ribbon\SuperTooltipControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ScrollBar\HScrollBarAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ScrollBar\ScrollBarAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ScrollBar\VScrollBarAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ScrollButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DevComponents\Separator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SideBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SideBarContainerItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SideBarPanelControlHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SideBarPanelItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SimpleItemContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\StyleManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\StyleManagerAmbient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabControlBox\SuperTabCloseBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabControlBox\SuperTabControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabControlBox\SuperTabMenuBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabControl\SuperTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabControl\SuperTabControlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabItem\SuperTabItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabStrip\SuperTabDragWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabStrip\SuperTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SuperTabControl\SuperTabStrip\SuperTabStripItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SwitchButton\SwitchButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\SwitchButton\SwitchButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\TabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\TabControlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\TabItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\TabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\TextBoxItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ToolbarName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DevComponents\ToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Editor\AdvCollectionEditorCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Editor\AdvCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Editor\FilterListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Editor\SplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
